@@ -1,0 +1,242 @@
+:root {
+    --main-front: "Roboto", sans-serif ;
+    --secondary-front: "Raleway", sans-serif;
+
+
+}
+
+body {
+    font-family: var(--main-front) ;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: #757575;
+}
+
+.header {
+background: #FFFFFF;
+}
+
+.logo {
+    font-family: "Raleway", sans-serif;
+font-weight: bold;
+font-size: 26px;
+line-height: 1.92;
+letter-spacing: 0.03em;
+color: #2196F3;
+}
+
+.nav-link {
+    font-family: "Roboto", sans-serif ;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: #212121;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #2196F3;
+
+}
+
+.mail {
+    font-family: "Roboto", sans-serif ;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: #757575;
+}
+
+.mail:hover,
+.mail:focus {
+    color: #2196F3;
+}
+
+.tel {
+    font-family: "Roboto", sans-serif ;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: #757575;
+}
+
+.tel:hover,
+.tel:focus {
+    color: #2196F3;
+}
+
+
+
+.section-first{
+    background: #2F303A;
+}
+
+.service {
+    font-family: "Roboto", sans-serif ;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.service-button {
+    font-family: "Roboto", sans-serif ;
+font-weight: bold;
+font-size: 16px;
+line-height: 1.87;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+background: #2196F3;
+cursor: pointer;
+}
+
+
+
+
+.service-header {
+    font-family: "Roboto", sans-serif ;
+font-weight: bold;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #212121;
+}
+
+.service-text {
+    font-family: "Roboto", sans-serif ;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: #757575;
+}
+
+.work {
+    font-family: "Roboto", sans-serif ;
+font-weight: bold;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+
+.team {
+    font-family: "Roboto", sans-serif ;
+font-weight: bold;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+
+.team-name {
+    font-family: "Roboto", sans-serif ;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+
+.team-work {
+    font-family: "Roboto", sans-serif ;
+font-weight: normal;
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+letter-spacing: 0.03em;
+color: #757575;
+}
+
+
+
+
+.footer {
+    background: #2F303A;
+}
+
+.address-link {
+    font-family: "Roboto", sans-serif ;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+}
+
+.address-link-mail {
+    font-family: "Roboto", sans-serif ;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.address-link-mail:hover,
+.address-link-mail:focus {
+    color: #2196F3;
+}
+
+.address-link-tel {
+    font-family: "Roboto", sans-serif ;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.address-link-tel:hover,
+.address-link-tel:focus {
+    color: #2196F3;
+}
+
+.portfolio-button {
+    font-family: "Roboto", sans-serif ;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+background: #F5F4FA;
+cursor: pointer;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+    background: #2196F3;
+}
+
+.production-headr {
+    font-family: "Roboto", sans-serif ;
+font-weight: bold;
+font-size: 18px;
+line-height: 2.00;
+letter-spacing: 0.06em;
+color: #212121;
+}
+
+.production-text {
+    font-family: "Roboto", sans-serif ;
+font-weight: normal;
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.03em;
+color: #757575;
+}
