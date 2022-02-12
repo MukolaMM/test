@@ -1,7 +1,9 @@
 :root {
     --main-front: "Roboto", sans-serif ;
     --secondary-front: "Raleway", sans-serif;
-
+    --white-color: #FFFFFF;
+    --color-text: #757575;
+    --color-header-text: #212121; 
 
 }
 
@@ -10,11 +12,11 @@ body {
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: #757575;
+color: var(--color-text);
 }
 
 .header {
-background: #FFFFFF;
+background: var(--white-color);
 }
 
 .logo {
@@ -23,16 +25,24 @@ font-weight: bold;
 font-size: 26px;
 line-height: 1.92;
 letter-spacing: 0.03em;
-color: #2196F3;
+}
+.logo-a {
+    color: #2196F3; 
+}
+.logo-b {
+  color: var(--color-header-text);  
+
+}
+.logo-c {
+    color: var(--white-color);
 }
 
 .nav-link {
-    font-family: "Roboto", sans-serif ;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: #212121;
+color: var(--color-header-text);
 }
 
 .nav-link:hover,
@@ -42,7 +52,6 @@ color: #212121;
 }
 
 .mail {
-    font-family: "Roboto", sans-serif ;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -56,7 +65,6 @@ color: #757575;
 }
 
 .tel {
-    font-family: "Roboto", sans-serif ;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -76,18 +84,18 @@ color: #757575;
 }
 
 .service {
-    font-family: "Roboto", sans-serif ;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-color: #FFFFFF;
+color: var(--white-color);
 }
 
 .service-button {
-    font-family: "Roboto", sans-serif ;
+    font-family: Roboto;
+font-style: normal;
 font-weight: bold;
 font-size: 16px;
 line-height: 1.87;
@@ -95,7 +103,7 @@ display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
-color: #FFFFFF;
+color: var(--white-color);
 background: #2196F3;
 cursor: pointer;
 }
@@ -104,13 +112,11 @@ cursor: pointer;
 
 
 .service-header {
-    font-family: "Roboto", sans-serif ;
-font-weight: bold;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: #212121;
+color: var(--color-header-text);
 }
 
 .service-text {
@@ -123,37 +129,31 @@ color: #757575;
 }
 
 .work {
-    font-family: "Roboto", sans-serif ;
-font-weight: bold;
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
-color: #212121;
+color: var(--color-header-text);
 }
 
 .team {
-    font-family: "Roboto", sans-serif ;
-font-weight: bold;
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
-color: #212121;
+color: var(--color-header-text);
 }
 
 .team-name {
-    font-family: "Roboto", sans-serif ;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
-color: #212121;
+color: var(--color-header-text);
 }
 
 .team-work {
-    font-family: "Roboto", sans-serif ;
 font-weight: normal;
 font-size: 16px;
 line-height: 1.19;
@@ -170,17 +170,17 @@ color: #757575;
 }
 
 .address-link {
-    font-family: "Roboto", sans-serif ;
 font-weight: normal;
+font-style: normal;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: #FFFFFF;
+color: var(--white-color);
 }
 
 .address-link-mail {
-    font-family: "Roboto", sans-serif ;
 font-weight: normal;
+font-style: normal;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
@@ -193,8 +193,8 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .address-link-tel {
-    font-family: "Roboto", sans-serif ;
 font-weight: normal;
+font-style: normal;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
@@ -207,13 +207,14 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .portfolio-button {
-    font-family: "Roboto", sans-serif ;
+    font-family: Roboto;
+font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
 text-align: center;
 letter-spacing: 0.03em;
-color: #212121;
+color: var(--color-header-text);
 background: #F5F4FA;
 cursor: pointer;
 }
@@ -224,19 +225,22 @@ cursor: pointer;
 }
 
 .production-headr {
-    font-family: "Roboto", sans-serif ;
-font-weight: bold;
 font-size: 18px;
 line-height: 2.00;
 letter-spacing: 0.06em;
-color: #212121;
+color: var(--color-header-text);
 }
 
 .production-text {
-    font-family: "Roboto", sans-serif ;
 font-weight: normal;
 font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.03em;
 color: #757575;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
 }
