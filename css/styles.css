@@ -19,6 +19,8 @@ color: var(--color-text);
 .header {
 background: var(--white-color);
 border: 1px solid #ECECEC;
+padding-top: 24px;
+padding-bottom: 25px;
 }
 .header .container {
     display: flex;
@@ -31,6 +33,7 @@ font-weight: bold;
 font-size: 26px;
 line-height: 1.92;
 letter-spacing: 0.03em;
+margin-right: 93px;
 }
 .logo-a {
     color: #2196F3; 
@@ -43,6 +46,13 @@ letter-spacing: 0.03em;
     color: var(--white-color);
 }
 /* Навігація */
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+.nav-item:not(:last-child) {
+margin-right: 50px;
+}
 .nav-link {
 font-weight: 500;
 font-size: 14px;
@@ -64,6 +74,7 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: #757575;
+padding-left: 331px;
 }
 
 .mail:hover,
@@ -77,6 +88,7 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: #757575;
+margin-left: 50px;
 }
 
 .tel:hover,
@@ -88,16 +100,24 @@ color: #757575;
 /* заливка першой секції */
 .section-first{
     background: #2F303A;
+    height: 600px;
+    width: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 /* Заголовок */
 .service {
-font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-color: var(--white-color);
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: var(--main-font);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    
+
 }
 /* Кнопка заказа */
 .service-button {
@@ -135,6 +155,7 @@ letter-spacing: 0.03em;
 color: #757575;
 }
 /* Заголовок робота */
+
 .work {
 font-size: 36px;
 line-height: 1.17;
@@ -143,6 +164,9 @@ letter-spacing: 0.03em;
 color: var(--color-header-text);
 }
 /* Заголовок команада */
+.section-four {
+    background-color: #F5F4FA;
+}
 .team {
 font-size: 36px;
 line-height: 1.17;
