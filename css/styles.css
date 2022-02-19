@@ -145,6 +145,9 @@ margin-right: auto;
     padding-top: 94px;
     padding-bottom: 94px;
 }
+ul  {
+    display: flex;
+}
 .servise_list {
     display: flex;
     text-align: left;
@@ -262,6 +265,9 @@ color: #757575;
     text-align: left;
   }
 /* Адрес */
+.address-list {
+    display: block;
+}
 .address-link {
 font-weight: normal;
 font-style: normal;
