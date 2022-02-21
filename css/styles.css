@@ -15,6 +15,15 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--color-text);
 }
+/* Контейнер */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
 /* Шапка */
 .header {
 background: var(--white-color);
@@ -74,7 +83,7 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: #757575;
-padding-left: 331px;
+margin-left: 331px;
 }
 
 .mail:hover,
@@ -150,7 +159,7 @@ ul  {
 }
 .servise_list {
     display: flex;
-    text-align: left;
+    
     margin-left: -30px;
   margin-top: -30px;
 }
@@ -159,7 +168,7 @@ ul  {
     margin-left: 30px;
     margin-top: 30px;
     width: 270px;
-
+    text-align: left;
    
 }
 .service-header {
@@ -227,7 +236,6 @@ margin-bottom: 50px;
     flex-basis: calc(100% / 4 - 30px);
     margin-left: 30px;
     margin-top: 30px;
-    padding-top: 30px;
     padding-bottom: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -259,7 +267,7 @@ color: #757575;
 .footer {
     background: #2F303A;
     padding-top: 60px;
-  padding-bottom: 55px;
+  padding-bottom: 60px;
 }
 .footer .container {
     text-align: left;
@@ -268,6 +276,7 @@ color: #757575;
 .address-list {
     display: block;
 }
+
 .address-link {
 font-weight: normal;
 font-style: normal;
@@ -276,15 +285,10 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--white-color);
 }
-.logo-footer {
-    margin-bottom: 20px;
-}
-.address-link {
-    margin-top: 20px;
-}
+
 .address-item {
   margin-bottom: 9px;
-
+  margin-top: -20px;
 }
 .address-item-mail{
     margin-bottom: 9px;
@@ -367,10 +371,7 @@ border: none;
     flex-basis: calc(100% / 3 - 30px);
     border: 1px solid #eeeeee;
     text-align: left;
-    padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: auto;
-    padding-right: auto;
     margin-left: auto;
     margin-top: 30px;
 }
@@ -412,13 +413,5 @@ p{
 ul {
     margin: 0;
     padding: 0;
-}
-/* Контейнер */
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
 }
 
