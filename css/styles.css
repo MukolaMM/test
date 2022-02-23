@@ -157,6 +157,18 @@ margin-right: auto;
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 ul  {
     display: flex;
 }
@@ -253,6 +265,7 @@ line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--color-header-text);
+margin-top: 30px;
 margin-bottom: 10px;
 }
 /* Професія */
@@ -285,10 +298,14 @@ padding-bottom: 60px;
 .address-list {
     display: block;
 }
+.address-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 
 .address-link {
 font-style: normal;
 color: var(--white-color);
+line-height: 1.71;
 }
 
 /* адрес почти */
@@ -348,6 +365,15 @@ border: none;
     0px 2px 2px rgba(0, 0, 0, 0.12);
    
 }
+.portfolio-pfoto-text {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 24px;
+    border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  }
 
 .production-list {
     
@@ -359,7 +385,7 @@ border: none;
 .production-item {
     
     flex-basis: calc(100% / 3 - 30px);
-    border: 1px solid #eeeeee;
+    
     text-align: left;
     padding-bottom: 20px;
     margin-left: auto;
