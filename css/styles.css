@@ -5,6 +5,7 @@
     --white-color: #FFFFFF;
     --color-text: #757575;
     --color-header-text: #212121; 
+    --accent-color: #2196F3;
 
 }
 /* для сторінки */
@@ -74,40 +75,39 @@ color: var(--color-header-text);
     color: #2196F3;
 
 }
-.contact-header {
+.contact-list {
     display: flex;
-    margin-left: auto;
+    align-items: center;
+    margin-left: 280px;
+  }
+  .contact-list li:not(:last-child) {
+    margin-right: 50px;
+    flex-wrap: nowrap;
+  }
+  .link-contact {
+    display: inline-flex;
+    align-items: center;
+    color: var(--color-text);
     padding-top: 32px;
     padding-bottom: 32px;
-}
-/* емейл */
-.mail {
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: #757575;
-}
-
-.mail:hover,
-.mail:focus {
-    color: #2196F3;
-}
-/* телефон */
-.tel {
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: #757575;
-margin-left: 50px;
-}
-
-.tel:hover,
-.tel:focus {
-    color: #2196F3;
-}
-
+  }
+  .link-contact:hover,
+  .link-contact:focus {
+    color: var(--accent-color);
+  }
+  .contact-item {
+    display: flex;
+  }
+  .contact-icon {
+    fill: var(--color-text);
+    margin-right: 10px;
+  }
+  .link-contact:hover svg {
+    fill: var(--accent-color);
+  }
+  .link-contact:focus svg {
+    fill: var(--accent-color);
+  }
 
 /* заливка першой секції */
 .section-first{
@@ -117,6 +117,16 @@ margin-left: 50px;
     padding-top: 200px;
     padding-bottom: 200px;
 }
+.bg-hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 /* Заголовок */
 .service {
     margin-bottom: 40px;
@@ -205,6 +215,16 @@ letter-spacing: 0.03em;
 color: #757575;
 padding-top: 10px;
 }
+.feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
+  
+  }
+  
+  
 /* Заголовок робота */
 .section-three {
     padding-bottom: 94px;

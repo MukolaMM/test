@@ -32,14 +32,28 @@
         </ul>
     </nav>
     <!-- Контакти -->
-    <a class="mail contact-header" href="mailto:info@devstudio.com">info@devstudio.com</a>
-    <a class="tel contact-header" href="tel:+380961111111">+38 096 111 11 11</a>
+    <ul class="contact-list">
+        <li class="contact-item">
+          <a href="mailto:info@devstudio.com" class="link-contact">
+            <svg class="contact-icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+            info@devstudio.com</a>
+        </li>
+        <li class="contact-item">
+          <a href="tel:+380961111111" class="link-contact">
+            <svg class="contact-icon" width="10" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            +38 096 111 11 11</a>
+        </li>
+      </ul>
 </div>
 </header>
 <!-- Середина -->
 <main class="main">  
     <!-- кнопка -->
-    <section class="section-first">
+    <section class="section-first bg-hero">
         <div class="container">
     <h1 class="service">Эффективные решения<br> для вашего бизнеса</h1>
 <button class="service-button" type="button">Заказать услугу</button>
@@ -50,22 +64,42 @@
         <div class="container">
         <h2 class="visually-hidden">Особенности</h2>
    <ul class="service-list">
-       <li class="service-item">
+       <li class="service-item icon-one">
         <h3 class="service-header">Внимание к деталям</h3>
         <p class="service-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+        <div class="feature-icon">
+            <svg width="70" height="70">
+              <use href="./images/icons.svg#icon-antenna"></use>
+            </svg>
+          </div>
        </li>
-       <li class="service-item">
+       <li class="service-item icon-two">
         <h3 class="service-header">Пунктуальность</h3>
         <p class="service-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-       </li>
-       <li class="service-item">
+        <div class="feature-icon">
+            <svg width="70" height="70">
+              <use href="./images/icons.svg#icon-clock"></use>
+            </svg>
+          </div>   
+    </li>
+       <li class="service-item icon-three">
        <h3 class="service-header">Планирование</h3>
         <p class="service-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-       </li>
-       <li class="service-item">
+        <div class="feature-icon">
+            <svg width="70" height="70">
+              <use href="./images/icons.svg#icon-diagram"></use>
+            </svg>
+          </div>
+        </li>
+       <li class="service-item icon-four">
         <h3 class="service-header">Современные технологии</h3>
         <p class="service-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-       </li>
+        <div class="feature-icon">
+            <svg width="70" height="70">
+              <use href="./images/icons.svg#icon-astronaut"></use>
+            </svg>
+          </div>
+        </li>
    </ul>
 </div>
 </section>
