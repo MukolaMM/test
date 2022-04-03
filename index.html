@@ -26,9 +26,9 @@
     <!-- Навігація -->
     <nav class="nav">
         <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="index.html">Студия</a></li>
-            <li class="nav-item"><a class="nav-link" href="portfolio.html">Портфолио</a></li>
-            <li class="nav-item"><a class="nav-link" href="/Контакты">Контакты</a></li>
+            <li class="nav-item"><a class="nav-link menu-link-studio" href="index.html">Студия</a></li>
+            <li class="nav-item"><a class="nav-link menu-link-studio-portfolio" href="portfolio.html">Портфолио</a></li>
+            <li class="nav-item"><a class="nav-link menu-link-studio-contacts" href="/Контакты">Контакты</a></li>
         </ul>
     </nav>
     <!-- Контакти -->
@@ -56,7 +56,7 @@
     <section class="section-first bg-hero">
         <div class="container">
     <h1 class="service">Эффективные решения<br> для вашего бизнеса</h1>
-<button class="service-button" type="button">Заказать услугу</button>
+<button class="service-button" type="button" data-modal-open>Заказать услугу</button>
 </div>
     </section>
     <!-- Особенности -->
@@ -91,16 +91,31 @@
     </h2>
     <ul class="work-list">
         <li class="work-item">
-            <img class="work-pfoto" src="images/img.jpg" alt="Разработка програми"
-            width="370" />
+            <div class="work-block">
+                <img class="work-pfoto" src="images/img.jpg" alt="Разработка програми"
+                width="370" /> 
+                <p class="work-text">
+                    Десктопные приложения
+                </p>
+            </div>
         </li>
         <li class="work-item">
+            <div class="work-block">
             <img class="work-pfoto" src="images/img(1).jpg" alt="Разработка моб. приложений" 
             width="370"/>
+            <p class="work-text">
+                Мобильные приложения
+            </p>
+        </div>
         </li>
         <li class="work-item">
+            <div class="work-block">
             <img class="work-pfoto" src="images/img(2).jpg" alt="Разработка дизайну" 
     width="370"/>
+    <p class="work-text">
+        Дизайнерские решения
+    </p>
+</div>
         </li>
     </ul>
 </div>
@@ -337,6 +352,13 @@
 </div>
 </div>
 </footer>
+<!-- Модельне вікно -->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal-window">
+        <button class="madal-btn" type="button" data-modal-close>x</button>
+    </div>
+</div>
+<script src="./js/modal.js"></script>
     </body>
 </html>
     
