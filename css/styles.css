@@ -693,8 +693,6 @@ transition: transform var(--animation);
     transform: translateY(0);
 }
 
-
-
 /* забирає підчеркування */
 a {
     text-decoration: none;
