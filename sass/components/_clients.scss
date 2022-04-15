@@ -1,0 +1,53 @@
+/* Клієнти*/
+.section-five {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients__list {
+    display: flex;
+    justify-content: center;
+}
+
+.clients {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-header-text);
+    margin-bottom: 50px;
+}
+
+.clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4%;
+    background: rgba(255, 255, 255, 0.1);
+    margin-left: 30px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        border: 1px solid #2196F3;
+    
+    }
+    &:hover svg,
+    &:focus svg {
+        fill: #2196F3;
+    }
+}
+
+.clients__svg {
+    fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover svg,
+    &:focus svg {
+        fill: #2196F3;
+    }
+}
+
+
+

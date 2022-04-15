@@ -1,0 +1,47 @@
+/* Заголовок робота */
+.section-three {
+    padding-bottom: 94px;
+}
+
+.work__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.work__item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.work {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-header-text);
+    margin-bottom: 50px;
+}
+
+/* як ми працюємо заголовок на фотографії знизу */
+.work__block {
+    position: relative;
+}
+
+.work__text {
+    width: 100%;
+    position: absolute;
+    bottom: 1%;
+    left: 0%;
+    padding: 27px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: rgba(47, 48, 58, 0.8);
+}

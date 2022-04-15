@@ -1,0 +1,146 @@
+/* Підвал */
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #2F303A;
+
+}
+
+.footer .container {
+    text-align: left;
+}
+
+.logo__footer {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+/* Адрес */
+.address__list {
+    display: block;
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address__link {
+    font-style: normal;
+    color: var(--white-color);
+    line-height: 1.71;
+}
+
+/* адрес почти */
+.address__link--mail {
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: #2196F3;
+    }
+}
+
+
+/* Адрес телефона */
+.address__link--tel {
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: #2196F3;
+    }
+}
+
+/* приєднання до соц. мереж*/
+.aside {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__social {
+    margin-left: 70px;
+}
+
+.footer__social--text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.footer__social--list {
+    display: flex;
+}
+
+.footer__social--item:not(:first-child) {
+    margin-left: 10px;
+}
+
+.footer__social--icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: #2196F3;
+    }
+}
+
+.footer__social--svg {
+    fill: #FFFFFF;
+}
+
+/* силка на емайл */
+.footer__subscribe {
+    margin-left: 93px;
+
+}
+
+.footer__subskribe--email {
+    display: flex;
+}
+
+.footer__subskribe--input {
+
+    width: 358px;
+    background-color: #2F303A;
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 13px 16px;
+
+}
+
+.footer__subskribe--btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2196F3;
+    color: #FFFFFF;
+    margin-left: 12px;
+    fill: #FFFFFF;
+    padding: 10px 29px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.footer__subskribe--icon {
+    margin-left: 10px;
+}

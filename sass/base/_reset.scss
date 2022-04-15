@@ -1,0 +1,23 @@
+/* забирає підчеркування */
+a {
+    text-decoration: none;
+}
+
+/* забирає маркерування */
+li {
+    list-style-type: none;
+}
+
+/* глобальне скидання стилів */
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}

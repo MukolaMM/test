@@ -1,0 +1,19 @@
+@import './utils/variables';
+
+@import './base/base';
+
+@import './base/_container.scss';
+
+@import './utils/hidden';
+
+@import './components/header';
+@import './components/hero';
+@import './components/service';
+@import './components/work';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';
+
+@import './components/portfolio';
+
+@import './components/modal';

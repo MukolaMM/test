@@ -1,0 +1,76 @@
+/* Підзаголовки */
+.section-two {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+ul {
+    display: flex;
+}
+
+.servise_list {
+    display: flex;
+
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.service__item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 270px;
+    text-align: left;
+
+}
+
+.service__header {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--color-header-text);
+    text-transform: uppercase;
+}
+
+/* Текст */
+.service__text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+    padding-top: 10px;
+}
+
+.service__item::before {
+    content: '';
+    display: block;
+    margin-bottom: 30px;
+    height: 120px;
+    border-radius: 4px;
+
+    background-repeat: no-repeat;
+    background-color: #f5f4fa;
+    background-position: center;
+}
+
+.service__item.icon-one::before {
+    background-image: url(../images/antenna.svg);
+    fill: #212121;
+}
+
+.service__item.icon-two::before {
+    background-image: url(../images/clock.svg);
+}
+
+.service__item.icon-three::before {
+    background-image: url(../images/dia.svg);
+}
+
+.service__item.icon-four::before {
+    background-image: url(../images/astronaut.svg);
+}
