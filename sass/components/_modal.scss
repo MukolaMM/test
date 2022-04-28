@@ -22,13 +22,20 @@
 
 .modal {
     position: absolute;
-    width: 528px;
-    height: 581px;
+ 
+  min-width: 450px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #FFFFFF;
+    @media screen and (min-width: 768px){
+       width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        min-width: 528px;
+    }
 }
+
 
 .madal__btn {
     position: absolute;
@@ -54,14 +61,18 @@
 }
 
 .modal__text {
-    font-family: 'Roboto';
-    font-style: normal;
+    display: block;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
+
+letter-spacing: 0.03em;
+color: #212121;
+@media screen and (min-width: 1200px){
+font-size: 20px;
+line-height: 1.15;
+}
 }
 
 .user {
@@ -129,6 +140,7 @@
     letter-spacing: 0.01em;
     color: #757575;
     margin-bottom: 4px;
+    
 }
 
 .modal__textarea {
@@ -150,22 +162,29 @@
 
 
 .modal__policy--label {
-    display: flex;
+    position: relative;
+    display: inline-flex;
     align-items: center;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: #757575;
     cursor: pointer;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .modal__policy {
     display: inline-flex;
     margin-bottom: 30px;
-    margin-left: 12px;
+    
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+    }
 }
 
 .modal__policy--input {

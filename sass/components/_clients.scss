@@ -1,7 +1,12 @@
 /* Клієнти*/
 .section-five {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .clients__list {
@@ -10,12 +15,16 @@
 }
 
 .clients {
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--color-header-text);
+margin-bottom: 30px;
+font-weight: 700;
+font-size: 28px;
+line-height: 1.17;
+text-align: center;
+
+@media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+    font-size: 36px;
+}
 }
 
 .clients__link {

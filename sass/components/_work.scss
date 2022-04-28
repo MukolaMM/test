@@ -1,6 +1,10 @@
 /* Заголовок робота */
 .section-three {
     padding-bottom: 94px;
+        @media screen and (max-width:1199px) {
+            display: none;
+        
+        }
 }
 
 .work__list {
