@@ -12,6 +12,9 @@
 .clients__list {
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+    }
 }
 
 .clients {
@@ -47,7 +50,18 @@ text-align: center;
     &:focus svg {
         fill: #2196F3;
     }
+  
 }
+.clients__item:nth-child(3n+1) {
+      @media screen and (max-width: 767px) {
+          margin-bottom: 30px;
+      }
+      &:nth-child(1) {
+    @media screen and (max-width: 1199px) {
+               margin-bottom: 30px;
+           }
+        }
+  }
 
 .clients__svg {
     fill: #AFB1B8;
