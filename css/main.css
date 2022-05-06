@@ -47,8 +47,6 @@ ul {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 @media screen and (min-width: 480px) {
@@ -86,6 +84,8 @@ ul {
 .header {
   background: var(--white-color);
   border-bottom: 1px solid #ECECEC;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .header .container {
@@ -100,7 +100,13 @@ ul {
   font-size: 26px;
   line-height: 1.92;
   letter-spacing: 0.03em;
-  margin-right: 93px;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 
 .logo__a {
@@ -196,7 +202,7 @@ ul {
 .contact {
   display: flex;
   align-items: center;
-  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -218,9 +224,11 @@ ul {
   }
 }
 
-.contact__list li:not(:last-child) {
-  margin-right: 50px;
-  flex-wrap: nowrap;
+@media screen and (min-width: 1200px) {
+  .contact__list li:not(:last-child) {
+    margin-right: 50px;
+    flex-wrap: nowrap;
+  }
 }
 
 .contact__link {
@@ -830,10 +838,18 @@ ul {
   margin-bottom: 10px;
 }
 
-.team__social {
-  display: inline-flex;
+.team__socials {
+  display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0px 32px;
+  margin-top: 16px;
+  list-style: none;
+  gap: 10px;
+}
+
+.team__social {
+  display: inline-flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;

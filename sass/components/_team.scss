@@ -73,11 +73,19 @@ width: 100%;
     margin-top: 30px;
     margin-bottom: 10px;
 }
+.team__socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 32px;
+    margin-top: 16px;
+    list-style: none;
+    gap: 10px;
+}
 
 .team__social {
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    
     width: 44px;
     height: 44px;
     border-radius: 50%;

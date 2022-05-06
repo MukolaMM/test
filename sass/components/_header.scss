@@ -2,7 +2,8 @@
 .header {
     background: var(--white-color);
     border-bottom: 1px solid #ECECEC;
-
+padding-left: 15px;
+padding-right: 15px;
 
 }
 
@@ -18,7 +19,10 @@
     font-size: 26px;
     line-height: 1.92;
     letter-spacing: 0.03em;
-    margin-right: 93px;
+    margin-right: auto;
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }
 }
 
 .logo__a {
@@ -117,7 +121,7 @@
 .contact {
     display: flex;
     align-items: center;
-    margin-left: auto;
+    margin-right: auto;
     @media screen and (max-width:767px) {
         display: none;
     }
@@ -134,8 +138,10 @@
 }
 
 .contact__list li:not(:last-child) {
+    @media screen and (min-width: 1200px) {
     margin-right: 50px;
     flex-wrap: nowrap;
+    }
 }
 
 .contact__link {
