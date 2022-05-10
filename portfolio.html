@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <title>Document</title>
         
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
@@ -49,15 +49,21 @@
         </li>
       </ul>
     </div>
+        <button class="menu-btn" type="button" aria-label="Кнопка открытия меню" aria-expanded="false" data-menu-button>
+            <svg class="menu-btn__icon" width="40" height="40">
+                <use class="menu-btn__icon-open" href="./images/icons.svg#icon-pfone-menu"></use>
+                <use class="menu-btn__icon-close" href="./images/icons.svg#icon-pfone-close"></use>
+            </svg>
+        </button>
 </div>
 </header>
         <!-- Середина -->
-        <main class="main">
+         <main class="main">
             <section class="section-portfolio-first">
                 <div class="container">
-                <h1 class="portfolio" hidden>Портфолио</h1>
+                <h1 class="portfolio" hidden>Портфолио</h1> 
                 <!-- кнопки -->
-                <ul class="portfolio__list">
+                 <ul class="portfolio__list">
                     <li class="portfolio__item">
                         <button class="portfolio__button" type="button">Все</button>
                     </li>
@@ -76,7 +82,7 @@
 
                 </ul>
                 <!-- Фото -->
-                <ul class="production">
+               <ul class="production">
                     <li class="production__item">
                         <div class="production__pfoto">
                             <img class="production__photo--stay" src="images/port1.jpg" alt="Технокряк"
@@ -204,7 +210,7 @@
                 </ul>
             </div>
             </section>
-        </main>
+        </main> 
 <!-- Підвал -->
 <footer class="footer">
     <div class="container aside">
@@ -277,4 +283,49 @@
 </div>
 </div>
 </footer>
+
+<div class="mob-overlay" data-menu>
+    <div class="mob-menu">
+        <nav class="mob-memu__navigation">
+            <ul class="mob-menu__nav-list">
+                <li class="mob-menu__nav-item">
+                    <a class="mob-menu__nav-link " href="./index.html">Студия</a>
+                </li>
+                <li class="mob-menu__nav-item">
+                    <a class="mob-menu__nav-link mob-stydio" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mob-menu__nav-item">
+                    <a class="mob-menu__nav-link" href="#contacts">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="mob-menu__contacts">
+            <ul class="mob-menu__contacts-list">
+                <li class="mob-menu__contacts-item">
+                    <a class="mob-menu__contacts-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mob-menu__contacts-item">
+                    <a class="mob-menu__contacts-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mob-menu__social">
+            <ul class="mob-menu__social-list">
+                <li class="mob-menu__social-item">
+                    <a href="" class="mob-menu__social-link">Instagram</a>
+                </li>
+                <li class="mob-menu__social-item">
+                    <a href="" class="mob-menu__social-link">Twitter</a>
+                </li>
+                <li class="mob-menu__social-item">
+                    <a href="" class="mob-menu__social-link">Facebook</a>
+                </li>
+                <li class="mob-menu__social-item">
+                    <a href="" class="mob-menu__social-link">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="./js/menu.js"></script>
     </body>

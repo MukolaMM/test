@@ -7,7 +7,10 @@
 }
 
 .footer .container {
-    text-align: left;
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+        }
+    
 }
 
 .logo__footer {
@@ -20,7 +23,10 @@
 }
 
 .address__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
+            margin-bottom: 9px;
+        }
 }
 
 .address__link {
@@ -54,14 +60,31 @@
 
 /* приєднання до соц. мереж*/
 .aside {
-    display: flex;
-    align-items: baseline;
+    display: block;
+    text-align: center;
+        @media screen and (min-width: 768px) {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: baseline;
+                justify-content: center;
+            }
+    @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: baseline;
+        }
 }
 
 .footer__social {
-    margin-left: 70px;
+    @media screen and (min-width: 768px) {
+            margin-left: 165px;
+        }
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+        }
 }
-
+.footer__subscribe{
+    margin-top: 60px;
+}
 .footer__social--text {
     font-weight: bold;
     font-size: 14px;
@@ -70,10 +93,14 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     color: #FFFFFF;
+    @media screen and (max-width: 767px) {
+            margin-top: 60px;
+        }
 }
 
 .footer__social--list {
     display: flex;
+    justify-content: center;
 }
 
 .footer__social--item:not(:first-child) {
@@ -101,22 +128,44 @@
 
 /* силка на емайл */
 .footer__subscribe {
-    margin-left: 93px;
-
+    
+@media screen and (min-width: 1200px) {
+        margin-left: 93px;
+    }
 }
 
 .footer__subskribe--email {
-    display: flex;
+    display: block;
+    @media screen and (min-width: 1200px) {
+            display: flex;
+        }
 }
 
 .footer__subskribe--input {
 
-    width: 358px;
+    width: 100%;
     background-color: #2F303A;
     color: #FFFFFF;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     padding: 13px 16px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 480px) {
+            width: 450px;
+         
+        }
+                 @media screen and (min-width: 768px) {
+                     width: 450px;
+                     justify-content: center;
+                     
+        
+                 }
+                  @media screen and (min-width: 1200px) {
+                      margin-bottom: 0;
+                      width: 358px;
+        
+                  }
+    
 
 }
 
