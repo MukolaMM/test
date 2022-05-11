@@ -125,12 +125,13 @@ display: flex;
 .contact {
     display: flex;
     align-items: center;
-    margin-right: auto;
+    
     @media screen and (max-width:767px) {
         display: none;
+        margin-right: auto;
     }
      @media screen and (min-width: 1200px) {
-         margin-left: 305px;
+         margin-left: auto;
         
          
      }

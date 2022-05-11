@@ -210,18 +210,18 @@ ul {
 .contact {
   display: flex;
   align-items: center;
-  margin-right: auto;
 }
 
 @media screen and (max-width: 767px) {
   .contact {
     display: none;
+    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .contact {
-    margin-left: 305px;
+    margin-left: auto;
   }
 }
 
@@ -1290,21 +1290,86 @@ ul {
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .production__description {
+    border: none;
+  }
 }
 
 .production {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+  gap: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .production {
+    grid-template-columns: auto auto;
+    align-items: baseline;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .production {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 .production__item {
-  flex-basis: calc(100% / 3 - 30px);
-  text-align: left;
-  margin-left: 20px;
-  margin-left: auto;
-  margin-top: 30px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 479px) {
+  .production__item {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .production__item {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .production__item {
+    width: 354px;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .production__item {
+    width: 370px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .production__item {
+    flex-basis: calc(100% / 3 - 30px);
+    text-align: left;
+    margin-left: 20px;
+    margin-left: auto;
+    margin-top: 30px;
+  }
+}
+
+.production__photo--stay {
+  width: 100%;
 }
 
 /* Перша надпісь під фото */
@@ -1328,6 +1393,7 @@ ul {
 .production__pfoto {
   position: relative;
   overflow: hidden;
+  width: auto;
 }
 
 .production__pfoto--text {
