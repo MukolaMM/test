@@ -63,6 +63,10 @@ width: 100%;
 }
 
 /* Команда */
+.team__cartka {
+    padding-top: 30px;
+    padding-bottom: 24px;
+}
 .team__name {
     font-weight: 500;
     font-size: 16px;
@@ -70,27 +74,24 @@ width: 100%;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--color-header-text);
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 .team__socials{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 32px;
     margin-top: 16px;
     list-style: none;
     gap: 10px;
 }
 
 .team__social {
-    display: inline-flex;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    margin-bottom: 24px;
-    margin-top: 16px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
@@ -100,9 +101,6 @@ width: 100%;
     &:focus svg {
         fill: #FFFFFF;
     }
-          @media screen and (min-width: 1200px) {
-            margin-bottom: 30px;
-          }
 }
 
 .team__social--svg {

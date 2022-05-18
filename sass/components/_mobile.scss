@@ -1,4 +1,5 @@
 .menu-btn {
+    
     position: relative;
 
     display: flex;
@@ -13,7 +14,7 @@
     background-color: transparent;
     border: transparent;
     outline: transparent;
-    z-index: 99;
+    z-index: 100;
     
 
 @media screen and (min-width: 768px) {
@@ -77,6 +78,8 @@
 }
 
 .mob-menu {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     padding: 40px;
@@ -86,8 +89,6 @@
 
 
 .mob-menu__nav-link {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 40px;
     line-height: 1.17;
@@ -108,30 +109,29 @@ margin-bottom: 32px;
     display: block;
 }
 .mob-menu__contacts {
-    margin-top: 302px;
+    margin-top: auto;
 
 }
 .mob-menu__contacts-list {
     display: block;
 }
 .mob-menu__contacts-tel {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
-    font-size: 34px;
+    font-size: 24px;
     line-height: 1.17;
    
     letter-spacing: 0.02em;
     
     color: #2196F3;
- 
+    @media screen and (min-width: 480px) {
+            font-size: 34px;
+    
+        }
 }
 .mob-menu__contacts-item {
 margin-bottom: 32px;
 }
 .mob-menu__contacts-mail {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 1.16;

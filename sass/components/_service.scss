@@ -7,14 +7,10 @@
         padding-bottom: 94px;
     }
 }
-
-
-ul {
-    display: block;
-    @media screen and (min-width: 768px) {
-     display: flex ;
-     flex-wrap: wrap;
-    }
+ul.service__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .servise_list {
@@ -31,46 +27,29 @@ ul {
 }
 
 .service__item {
-    display: block;
+    flex-basis: 450px ;
     justify-content: center;
-
-    margin-top: 15px;
     text-align: center;
-
-  
+@media screen and (min-width: 768px) {
+    flex-basis: 354px;
+    }
     @media screen and (min-width: 1200px) {
             flex-basis: calc(100% / 4 - 30px);
         }
 
 }
-.service__item:nth-child(2){
-   
-    @media screen and (min-width: 768px) and (max-width:1199px) {
-        margin-left: 30px;
-    }
-}
-.service__item:nth-child(4) {
-    @media screen and (min-width: 768px) and (max-width:1199px) {
-        margin-left: 30px;
-    }
-}
-.service__item:nth-child(-n+3){
-    @media screen and (min-width: 1200px) {
-        margin-right: 30px;
-    }
-}
+
 
 .service__header {
-    width: 450px;
 font-weight: 700;
 font-size: 14px;
-line-height: 1.14px;
+line-height: 1.14;
 text-align: center;
 letter-spacing: 0.03em;
     color: var(--color-header-text);
     text-transform: uppercase;
     @media screen and (min-width: 768px) {
-        width: 354px;
+        
     }
     @media screen and (min-width: 1200px) {
         width: 270px;
@@ -84,7 +63,7 @@ letter-spacing: 0.03em;
 .service__text {
     
     text-align: left;
-    width: 450px;
+    
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -93,10 +72,6 @@ letter-spacing: 0.03em;
     color: #757575;
     padding-top: 10px;
     margin-left: 15px;
-    @media screen and (min-width: 768px) {
-        width: 354px;
-        
-    }
     @media screen and (min-width: 1200px) {
         width: 270px;
         margin-left: 0;

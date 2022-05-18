@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     grid-gap: 30px;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         flex-wrap: wrap;
     }
 }
